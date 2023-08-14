@@ -1,10 +1,34 @@
-# MfePoc
+# Angular MFE
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.8.
 
+## Host Micro-frontend
+
+```
+des-shell-mfe: http://localhost:4200/
+```
+
+## Remote Micro-frontend
+
+```
+1. dashboard-mfe: http://localhost:4201/
+2. alarm-mfe: http://localhost:4202/
+3. logs-mfe: http://localhost:4203/
+4. Analytics-mfe: http://localhost:4204/
+```
+
+## How to create new project (mfe) in host application.
+
+1. Create a project using : `ng g application <mfe_app-name> --routing --style=scss`
+2. Add Module Federation : `ng add @angular-architects/module-federation --project <mfe_app_name> --port <port_number> --type remote`
+3. create a module which you want to expose in shell-mfe application :
+4. expose the module in webpack.config.ts:
+5. update the manifest file in host application:
+6. update the routes in app_routes.ts in host app:
+
 ## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- Run `ng run start` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
 ## Code scaffolding
 
