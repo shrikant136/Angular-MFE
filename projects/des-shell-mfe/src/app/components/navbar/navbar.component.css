@@ -1,0 +1,13 @@
+.card {
+  border: 1px solid #ccc;
+  margin-bottom: 1rem;
+}
+.nav-links {
+  color: #000;
+  text-decoration: none;
+  &.active {
+    color: #fff;
+    /* text-decoration: underline; */
+    background: #3e708fe3;
+  }
+}

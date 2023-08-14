@@ -1,0 +1,37 @@
+{
+  "dashboard-mfe": {
+    "remoteEntry": "http://localhost:4201/remoteEntry.js",
+    "exposedModule": "./DashboardModule",
+    "displayName": "Dashboard",
+    "routePath": "dashboard",
+    "ngModuleName": "DashboardModule"
+  },
+  "alarm-mfe": {
+    "remoteEntry": "http://localhost:4202/remoteEntry.js",
+    "exposedModule": "./AlarmModule",
+    "displayName": "Alarm",
+    "routePath": "alarm",
+    "ngModuleName": "AlarmModule"
+  },
+  "logs-mfe": {
+    "remoteEntry": "http://localhost:4203/remoteEntry.js",
+    "exposedModule": "./LogsModule",
+    "displayName": "Logs",
+    "routePath": "logs",
+    "ngModuleName": "LogsModule"
+  },
+  "analytics-mfe": {
+    "remoteEntry": "http://localhost:4204/remoteEntry.js",
+    "exposedModule": "./AnalyticsModule",
+    "displayName": "Analytics",
+    "routePath": "analytics",
+    "ngModuleName": "AnalyticsModule"
+  },
+  "admin-mfe": {
+    "remoteEntry": "http://localhost:4205/remoteEntry.js",
+    "exposedModule": "./AdminModule",
+    "displayName": "Admin",
+    "routePath": "Admin",
+    "ngModuleName": "AdminModule"
+  }
+}
