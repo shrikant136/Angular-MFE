@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { CustomRemoteConfig } from '../../utils/config';
+import { CustomRemoteConfig } from '../../model';
 
 @Component({
   selector: 'app-navbar',

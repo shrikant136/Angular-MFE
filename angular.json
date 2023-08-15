@@ -27,7 +27,10 @@
               "projects/des-shell-mfe/src/favicon.ico",
               "projects/des-shell-mfe/src/assets"
             ],
-            "styles": ["projects/des-shell-mfe/src/styles.scss"],
+            "styles": [
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "projects/des-shell-mfe/src/styles.scss"
+            ],
             "scripts": [
               "./node_modules/jquery/dist/jquery.min.js",
               "./node_modules/popper.js/dist/umd/popper.min.js",
@@ -493,6 +496,36 @@
             ],
             "styles": ["projects/analytics-mfe/src/styles.scss"],
             "scripts": []
+          }
+        }
+      }
+    },
+    "des-shared": {
+      "projectType": "library",
+      "root": "projects/des-shared",
+      "sourceRoot": "projects/des-shared/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/des-shared/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/des-shared/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/des-shared/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "tsConfig": "projects/des-shared/tsconfig.spec.json",
+            "polyfills": ["zone.js", "zone.js/testing"]
           }
         }
       }

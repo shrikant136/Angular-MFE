@@ -5,7 +5,8 @@
     "types": [],
     "paths": {
       "@/*": ["src/*"],
-      "@assets/*": ["src/assets/*"]
+      "@assets/*": ["src/assets/*"],
+      "@library/*": ["projects/des-shared/src/public-api/*"]
     }
   },
   "files": ["src/main.ts"],
