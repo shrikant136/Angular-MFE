@@ -8,7 +8,21 @@ import { CustomRemoteConfig } from '../../model';
 })
 export class NavbarComponent implements OnInit {
   @Input() remotes: CustomRemoteConfig[] = [];
+  @Input() fullScreen: boolean = false;
   constructor() {}
+  docElement!: HTMLElement;
+  isFullScreen: boolean = false;
 
-  ngOnInit() {}
+  ngOnInit(): void {
+    this.docElement = document.documentElement;
+  }
+
+  toggleFullScreen() {
+    if (!this.isFullScreen) {
+      this.docElement.requestFullscreen();
+    } else {
+      document.exitFullscreen();
+    }
+    this.isFullScreen = !this.isFullScreen;
+  }
 }
