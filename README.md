@@ -1,4 +1,4 @@
-# Angular MFE
+# Angular MFE - MonoRepo Example
 
 This project shows an example of using Webpack 5 Module Federation with Angular `15.0.4` using shared module and NGRX state management.
 

@@ -10,6 +10,11 @@
     />
   </div>
   <nav class="my-2 my-md-0 mr-md-0">
+    <ng-container *ngIf="!fullScreen">
+      <button class="btn" (click)="toggleFullScreen()">
+        <i class="fa fa-bell"></i>
+      </button>
+    </ng-container>
     <ng-container *ngFor="let remote of remotes">
       <a
         class="p-2 nav-links"

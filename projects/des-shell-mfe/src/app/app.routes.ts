@@ -1,6 +1,6 @@
 import { loadRemoteModule } from '@angular-architects/module-federation';
 import { Routes } from '@angular/router';
-import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
+import { PageNotFoundComponent } from 'projects/des-shared/src/lib/components';
 
 interface RouteConfig {
   path: string;
